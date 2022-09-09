@@ -1,0 +1,50 @@
+[
+    {
+       "id":1,
+       "name":"Replace Tire",
+       "price":2000,
+       "details": "lorem ipsum bja shiman fyu uas eefh jned djbw hdb hbdej djw 2owo.",
+       "time":2,
+       "img":"https://i.ibb.co/44FQRHQ/img-1.jpg"
+    },
+    {
+       "id":2,
+       "name":"Engine Repair",
+       "price":2000,
+       "details": "lorem ipsum bja shiman fyu uas eefh jned djbw hdb hbdej djw 2owo.",
+       "time":2,
+       "img":"https://i.ibb.co/Tc66HHC/img-6.jpg"
+    },
+    {
+       "id":3,
+       "name":"Oil Change",
+       "price":2000,
+       "details": "lorem ipsum bja shiman fyu uas eefh jned djbw hdb hbdej djw 2owo.",
+       "time":2,
+       "img":"https://i.ibb.co/Y87gR8s/img-2.jpg"
+    },
+    {
+       "id":4,
+       "name":"Coloring",
+       "price":2000,
+       "details": "lorem ipsum bja shiman fyu uas eefh jned djbw hdb hbdej djw 2owo.",
+       "time":2,
+       "img":"https://i.ibb.co/44FQRHQ/img-1.jpg"
+    },
+    {
+       "id":5,
+       "name":"Broken Glass",
+       "price":2000,
+       "details": "lorem ipsum bja shiman fyu uas eefh jned djbw hdb hbdej djw 2owo.",
+       "time":2,
+       "img":"https://i.ibb.co/Y87gR8s/img-2.jpg"
+    },
+    {
+       "id":6,
+       "name":"Dumping Car",
+       "price":2000,
+       "details": "lorem ipsum bja shiman fyu uas eefh jned djbw hdb hbdej djw 2owo.",
+       "time":2,
+       "img":"https://i.ibb.co/44FQRHQ/img-1.jpg"
+    }
+ ]
