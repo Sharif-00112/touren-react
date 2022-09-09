@@ -8,7 +8,7 @@ const Register = () => {
 
     return (
         <div>
-            <h3 className='pt-5'>New user Registration</h3> <hr className='w-25 mx-auto'/>
+            <h2 className='text-success mt-5'>-New user Registration-</h2> <hr className='mx-auto w-25'/>
 
             <form className='w-75 mx-auto' onSubmit={handleRegisterSubmitBtn}>
                 <div className="row mb-3">

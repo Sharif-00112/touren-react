@@ -1,14 +1,18 @@
 import React from 'react';
+import About from '../../About/About';
+import Contact from '../../Contact/Contact';
 import Banner from '../Banner/Banner';
-import Experts from '../Experts/Experts';
-import Services from '../Services/Services';
+import Packages from '../Packages/Packages';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
         <div className="" id='home'>
             <Banner></Banner>
-            <Services></Services>
-            <Experts></Experts>
+            <Packages></Packages>
+            <Reviews></Reviews>
+            <About></About>
+            <Contact></Contact>
         </div>
     );
 };

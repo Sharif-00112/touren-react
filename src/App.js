@@ -10,7 +10,7 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import Header from './Pages/Shared/Header/Header';
 import Contact from './Pages/Contact/Contact';
-import About from './Pages/About/About/About';
+import About from './Pages/About/About';
 import Footer from './Pages/Shared/Footer/Footer';
 import ForgotPassword from './Pages/Login/ForgotPassword/ForgotPassword';
 import CompleteProfile from './Pages/Login/CompleteProfile/CompleteProfile';
@@ -32,7 +32,7 @@ function App() {
             <Route exact path = '/register' element = {<Register></Register>}> </Route>
             <Route exact path = '/forgotpassword' element = {<ForgotPassword></ForgotPassword>}> </Route>
 
-            <Route exact path = '/booking/:serviceId' element = {
+            <Route exact path = '/booking/:packageId' element = {
               <PrivateRoute>
                 <Booking></Booking>
               </PrivateRoute>
