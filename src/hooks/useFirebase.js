@@ -22,10 +22,6 @@ const useFirebase = () =>{
       setIsLoading(true);
       signInWithPopup(auth, googleProvider)
       .then((result) => {
-          // This gives you a Google Access Token. You can use it to access the Google API.
-          // const credential = GoogleAuthProvider.credentialFromResult(result);
-          // const token = credential.accessToken;
-          // The signed-in user info.
           setUser(result.user);
       }).catch((error) => {
           // Handle Errors here.
@@ -41,12 +37,9 @@ const useFirebase = () =>{
     }
 
     const signInUsingGithub = () =>{
+      setIsLoading(true);
       signInWithPopup(auth, gitProvider)
       .then((result) => {
-        // This gives you a GitHub Access Token. You can use it to access the GitHub API.
-        // const credential = GithubAuthProvider.credentialFromResult(result);
-        // const token = credential.accessToken;
-
         // The signed-in user info.
         setUser(result.user);
       }).catch((error) => {
@@ -57,18 +50,17 @@ const useFirebase = () =>{
         setError(error.customData.email);
         // The AuthCredential type that was used.
         setError(GithubAuthProvider.credentialFromError(error));
+      }).finally(()=>{
+        setIsLoading(false);
       });
     };
 
     const signInUsingFacebook = () =>{
+      setIsLoading(true);
       signInWithPopup(auth, facebookProvider)
       .then((result) => {
         // The signed-in user info.
         setUser(result.user);
-
-        // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-        // const credential = FacebookAuthProvider.credentialFromResult(result);
-        // const accessToken = credential.accessToken;
       })
       .catch((error) => {
         // Handle Errors here.
@@ -78,6 +70,8 @@ const useFirebase = () =>{
         setError(error.customData.email);
         // The AuthCredential type that was used.
         setError(FacebookAuthProvider.credentialFromError(error));
+      }).finally(()=>{
+        setIsLoading(false);
       });
     };
 
@@ -87,6 +81,7 @@ const useFirebase = () =>{
     };
 
     const customLogin = (email, password) =>{
+      setIsLoading(true);
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
@@ -95,6 +90,8 @@ const useFirebase = () =>{
       .catch((error) => {
         setError(error.code);
         setError(error.message);
+      }).finally(()=>{
+        setIsLoading(false);
       });
     };
 
@@ -102,8 +99,6 @@ const useFirebase = () =>{
       createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
-        // const user = userCredential.user;
-        // console.log(user);
       })
       .catch((error) => {
         setError(error.code);
