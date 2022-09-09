@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
     //destructuring hooks
-    const {signInUsingGoogle, signInUsingGithub, signInUsingFacebook, signInUsingTwitter, user, error, handleLoginSubmitBtn, handleEmailChange, handlePasswordChange, logout } = useAuth();
+    const {signInUsingGoogle, signInUsingFacebook, user, error, handleLoginSubmitBtn, handleEmailChange, handlePasswordChange, logout } = useAuth();
      
     return (
         <div>
